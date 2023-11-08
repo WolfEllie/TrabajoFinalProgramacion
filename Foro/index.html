@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TwoTalk Inicio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="../foro/hablar1.png" type="image/x-icon">
+
+</head>
+<body>
+    <nav class="side-nav">
+            <img src="usuario.png" alt="Avatar" class="avatar" id="avatar">
+            <H1 class="usuario" alt="usuario" id="usuario">Usuario</H1>
+        <ul>
+            <li class="logosNot"><a href="../Foro/index.html"><img class="icono" src="../Foro/home.png" alt="">Inicio</a></li>
+            <li class="logosNot"><a href="../notificaciones/index.html" target="_blank"><img class="icono" src="../Foro/activo.png" alt="">Notificaciones</a></li>
+            <li class="logosNot"><a href="../chat/index.html" target="_blank"> <img class="icono" src="../Foro/correo-electronico.png" alt="">Mensajes</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="imgLogo1"><img src="../Foro/hablar1.png" ></div>
+        <div class="h1Texto"><h1>TwoTalk</h1></div>
+        <div class="imgLogo1"><img src="../Foro/hablar2.png" ></div>
+        
+      
+    </header>
+    <main>
+        <button id="toggle-form">Crear una publicación</button>
+        <section id="post-form" class="hidden">
+            <div class="post-form-container">
+                <h2>Crear una publicación</h2>
+              <!--   <div class="form-group">
+                  <label for="post-username">Usuario:</label>
+                    <input type="text" id="post-username" placeholder="Tu usuario">
+                </div>--> 
+                <div class="form-group">
+                    <label for="post-image">Imagen:</label>
+                    <input type="file" id="post-image" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="post-title">Título:</label>
+                    <input type="text" id="post-title" placeholder="Titulo">
+                </div>
+                <div class="form-group">
+                    <label for="post-content">Contenido:</label>
+                    <textarea id="post-content" placeholder="Escribe un contenido"></textarea>
+                </div>
+                <button id="submit-post">Publicar</button>
+            </div>
+        </section>
+        <section id="post-list">
+            <h2>Publicaciones</h2>
+            <ul id="posts">
+                
+            </ul>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="publicaciones.js"></script>
+    <script src="usuarios.js"></script>
+
+    <div></div>
+</body>
+</html>
